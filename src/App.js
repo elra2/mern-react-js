@@ -1,27 +1,27 @@
 import React, {Component} from 'react';
-import Todos from './components/Todos';
 
 import './App.css';
+import TodoList from './components/TodoList';
 
 class App extends Component {
   state = {
-    todolist: [
+    thingstodo: [
     {
       id: 1,
-      title: 'Number 1',
-      completed: false
+      taskname: 'Number 1',
+      status: false
     },
 
       {
         id: 2,
-        title: 'Number 2',
-        completed: false
+        taskname: 'Number 2',
+        status: false
       },
 
      {
           id: 3,
-          title: 'Number 3',
-          completed: false
+          taskname: 'Number 3',
+          status: false
       }
   
     ]
@@ -29,11 +29,11 @@ class App extends Component {
 
 
   render () {
-    console.log(this.state.todolist);
     return (
-    <div>
-        <Todos />
-    </div>
+    <React.Fragment>
+    <h2>hi</h2>
+    
+    </React.Fragment>
   );
   }
 }
